@@ -249,6 +249,9 @@
 		&_text {
 			text-align: center;
 		}
+		img {
+			display: none;
+		}
 	
 	}
 	.finish {
@@ -325,9 +328,7 @@
 		&_call {
 			margin-top: 20px;
 		}
-		
 	}
-	
 	footer a {
 		display: block;
 	}

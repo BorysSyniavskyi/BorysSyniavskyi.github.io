@@ -26,7 +26,7 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('styles', function() {
+gulp.task('stylespulse', function() {
     return gulp.src("src/pulse/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
@@ -36,7 +36,7 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('styles', function() {
+gulp.task('stylesuber', function() {
     return gulp.src("src/uber/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
@@ -46,7 +46,7 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('styles', function() {
+gulp.task('styleswordpress', function() {
     return gulp.src("src/wordpress/sass/**/*.+(scss|sass)")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
@@ -57,7 +57,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch("**/*.+(scss|sass)", gulp.parallel('styles'));
+    gulp.watch("**/*.+(scss|sass)", gulp.parallel('styles', 'stylespulse', 'stylesuber', 'styleswordpress'));
 })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles','stylespulse', 'stylesuber', 'styleswordpress'));
