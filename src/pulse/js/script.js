@@ -15,7 +15,7 @@ $(document).ready(function() {
                 mouseDrag: true,
                 nav: true,
             },
-            992: {
+            768: {
                 nav: false,
                 mouseDrag: false
                 

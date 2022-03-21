@@ -162,11 +162,7 @@
     }
     .carousel {
         .prev, .next {
-            
-            img {
-                width: 20px;
-                height: 34px;
-            }
+            display: none;
         }
     }
     .catalog {
@@ -241,6 +237,9 @@
         &__icon {
             margin-top: 30px;
         }
+        &__item {
+            margin-top: 20px;
+        }
         &__descr {
             margin-top: 20px;
         }
@@ -274,9 +273,7 @@
         .container {
             width: 100%;
         }
-        .prev, .next {
-            display: none;
-        }
+        
     }
     .catalog {
         .title {
@@ -360,6 +357,12 @@
             height: 35px;
             font-size: 12px;
         }
+    }
+    .pageup {
+        bottom: 40px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
     }
 }
 
