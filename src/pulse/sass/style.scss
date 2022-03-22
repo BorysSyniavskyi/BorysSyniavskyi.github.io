@@ -1,13 +1,12 @@
 * {
     font-family: 'Museo Sans Cyrl';
-    // font-size: 100px;
-    
 }
 .container {
     position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
+@import 'base/fonts';
 @import 'base/_variables';
 @import 'base/animations';
 @import 'blocks/promo';
