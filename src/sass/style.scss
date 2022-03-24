@@ -1,0 +1,57 @@
+@import 'bootstrap-reboot.min';
+
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	}
+	
+.photo {
+	height: 650px;
+	background: url('../img/I_am.jpg') center center/cover no-repeat;
+	}
+	
+h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	color: black;
+	span {
+		font-size: 20px;
+		color: red;
+	}
+}
+h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	color: black;
+	text-transform: uppercase;
+}
+	
+.tree {
+	display: flex;
+	justify-content: space-around;
+	}
+	.pulse, .uber, .wordpress {
+	width: 200px;
+	height: 100px;
+	display: block;
+	line-height: 100px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: red;
+	background-color: green;
+	}
+	.uber {
+		background-color: #000;
+		color: white;
+		}
+		
+	.wordpress {
+		background-color: grey;
+		color: yellow;
+		}
+		
